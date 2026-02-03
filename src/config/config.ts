@@ -7,26 +7,25 @@ export const getAsset = (path: string) => {
 const siteConfig = {
   personal: {
     name: 'Erin',
-    title: 'Your Title | Your Role',
-    image: getAsset('images/profile.png'), // Customize or replace with your profile image
+    title: 'Aspiring Data Analyst | BSc Economics with Data Science',
+    image: getAsset('images/erin.png.png'),
     description:
-      'Write a short bio here describing your background and focus. Keep it to 2–4 sentences.\n' +
+      'I am a BSc Economics with Data Science student at CHRIST (Deemed to be University), with a strong interest in data analysis and applied economics.\n' +
       '\n' +
-      'Mention your institution or company, areas of interest, and what you teach or build.\n' +
+      'My academic journey focuses on using data-driven methods to understand economic trends, solve real-world problems, and support informed decision-making.\n' +
       '\n' +
-      'Summarize your education or certifications briefly and highlight your practical work.\n' +
-      '\n' +
-      'Optional: Add notable books, workshops, or training you deliver.',
-    tagline: 'Add a concise personal tagline here.',
-    location: 'Your City, Country',
+      'I actively build skills through coursework, projects, and hands-on practice in programming, analytics, and research.',
+    tagline: 'Turning data into meaningful insights.',
+    location: 'India',
   },
 
   seo: {
-    title: 'Your Name – Your Title',
-    description: "Portfolio website showcasing your education, research, projects, and experience.",
+    title: 'Erin – Aspiring Data Analyst',
+    description:
+      'Portfolio website showcasing education, projects, skills, and research in economics and data science.',
   },
 
-  animatedText: ['Your Role', 'Your Focus', 'Your Interest', 'Builder'],
+  animatedText: ['Data Analyst', 'Economics Student', 'Data Science', 'Builder'],
 
   navigation: [
     { name: 'Home', url: '/' },
@@ -39,120 +38,101 @@ const siteConfig = {
     { name: 'Contact', url: '/contact' },
   ],
 
-  // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
-  // Add more entries here as you add more static HTML blog files under public/static_page/
   blogs: [
     {
-      title: 'Your Blog Title',
-      url: getAsset('static_page/project_management_blog.html'), // Replace with your static HTML page
+      title: 'Introduction to Data-Driven Decision Making',
+      url: getAsset('static_page/project_management_blog.html'),
     },
   ],
-
 
   education: [
     {
-      institution: 'Your Institution',
-      degree: 'Your Degree',
-      year: 'YYYY–YYYY',
+      institution: 'Graisley Primary School',
+      degree: 'Primary Education',
+      year: '—',
       image: getAsset('images/education/placeholder.png'),
-      description: ['Brief description of your focus or thesis'],
+      description: ['Foundational academic education'],
     },
     {
-      institution: 'Another Institution',
-      degree: 'Another Degree or Certificate',
-      year: 'YYYY–YYYY',
+      institution: 'CHRIST (Deemed to be University)',
+      degree: 'BSc Economics with Data Science',
+      year: '2025–2028',
       image: getAsset('images/education/placeholder.png'),
-      description: ['Key topics or skills learned'],
+      description: [
+        'Core focus on economics, statistics, and data science',
+        'Hands-on experience with analytical tools and programming',
+      ],
     },
   ],
 
-// ✅ Unified MOOC + Certifications Section
   certifications: [
     {
-      title: 'Your Certificate or Specialization',
+      title: 'Data Science & Analytics Coursework',
       specialization: true,
       file: getAsset('images/education/Certifications/download.svg'),
       certificates: [
-        { name: 'Course 1', file: getAsset('images/education/Certifications/download.svg') },
-        { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Python for Data Analysis', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'SQL & Database Management', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Statistical Methods for Economics', file: getAsset('images/education/Certifications/download.svg') },
       ],
     },
-    {
-      title: 'Another Certificate',
-      file: getAsset('images/education/Certifications/download.svg'),
-    },
   ],
 
-
-
-  // ✅ Experience section updated
   experience: [
     {
-      title: 'Your Role',
+      title: 'Data Analyst (Aspiring)',
       cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Your Organization',
-      time: '(MMM YYYY – Present)',
-      desp: ['Brief responsibility 1', 'Brief responsibility 2'],
-    },
-    {
-      title: 'Previous Role',
-      cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Previous Organization',
-      time: '(MMM YYYY – MMM YYYY)',
-      desp: ['Key contribution 1', 'Key contribution 2'],
+      place: 'Student, CHRIST University',
+      time: '(2025 – Present)',
+      desp: [
+        'Analyzing datasets as part of academic projects',
+        'Applying economic theory with data science techniques',
+      ],
     },
   ],
 
-
-  // ✅ Projects section updated
   projects: [
     {
-      title: 'Project Title 1',
+      title: 'Economic Data Analysis Project',
       cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Short description of your project and what it does...',
-      Githublink: 'https://github.com/your-username/your-project',
+      description:
+        'Analyzed economic indicators using Python and SQL to identify trends and insights.',
+      Githublink: 'https://github.com/your-username/economic-data-analysis',
     },
     {
-      title: 'Project Title 2',
+      title: 'Data Visualization Dashboard',
       cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Another project summary...',
-      Githublink: 'https://github.com/your-username/another-project',
+      description:
+        'Built interactive visualizations to communicate data insights effectively.',
+      Githublink: 'https://github.com/your-username/data-visualization-dashboard',
     },
   ],
-
 
   research: [
     {
-      title: 'Your Paper or Research Title',
-      authors: 'Your Name, Collaborator Name',
-      conferences: 'Conference or Journal, Publisher',
-      researchYr: 2024,
-  image: getAsset('images/research/placeholder.png'),
+      title: 'Applied Data Science in Economic Analysis',
+      authors: 'Erin',
+      conferences: 'Undergraduate Research, CHRIST University',
+      researchYr: 2026,
+      image: getAsset('images/research/placeholder.png'),
       citation: {
         vancouver:
-          'Author A, Author B. Title of the work. Venue, Year. DOI/URL.',
+          'Erin. Applied Data Science in Economic Analysis. CHRIST University, 2026.',
       },
       abstract:
-        'One or two sentences summarizing the contribution...',
+        'This study explores the use of data science techniques to analyze economic indicators and improve decision-making.',
       link: 'https://example.com/your-publication',
     },
   ],
 
-  books: [
-    {
-      title: 'Your Book Title',
-      description: 'Short description of your book or resource.',
-      image: getAsset('images/book_cover_placeholder.png'),
-      link: 'https://example.com/your-book',
-    },
-  ],
+  books: [],
 
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://www.linkedin.com/in/your-linkedin/',
+    email: 'erin@example.com',
+    linkedin: 'https://www.linkedin.com/in/erin/',
     github: 'https://github.com/your-username',
-    googleScholar: 'https://scholar.google.com/citations?user=YOURID',
-    orcid: 'https://orcid.org/0000-0000-0000-0000',
+    googleScholar: 'https://scholar.google.com/',
+    orcid: '',
   },
 };
 
